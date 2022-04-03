@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+/*Copiamos el URL de @import de la fuente que deseamos*/
+* {
+/*Este es el selector global, los parametros y valores que aqui se ingresen afectara a todos los elementos que componen el .html*/
+    box-sizing: border-box;
+    /*border-box: s el atributo que indica si el padding y el borde deben estar dentro de la medida completa de la caja*/
+    /*content-box: a la medida completa de la caja se le suma el borde y el padding de los lados*/
+}
+
+body {
+    /*Este selector abarca todos los elementos visibles del /html*/
+
+    font-family: "Poppins", sans-serif;
+    /*Especifica el tipo de fuente, puede contener otra fuente como parametro en caso que la primera falle, el ultimo parametro indica el estilo de la fuente*/
+
+    margin: 0px;
+    /*Indica que espacio tienen los elementos del body entre ellos, este espacio se cuenta por fuera del borde. Es la ultima capa del modelo de caja*/
+}
