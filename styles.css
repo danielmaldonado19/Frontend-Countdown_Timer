@@ -62,4 +62,15 @@ display: flex;
 
     margin: 0 2rem;
     /*Cuando hay 2 valores en este parametro, se define el margen superior e inferior con el primer valor. Y el margen izquierdo y derecho con el segundo valor*/
+
+    font-weight:bold;
+}
+
+.countdown-element {
+    text-align: center;
+}
+
+.countdown-element span{
+    font-size: 1rem;
+    font-weight: bold;
 }
