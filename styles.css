@@ -10,6 +10,19 @@
 body {
     /*Este selector abarca todos los elementos visibles del /html*/
 
+    background-image: url("images/snowLandscape.jpg");
+
+    background-size: cover;
+    /*Especifica el tamano que ocupan las imagenes de fondo*/
+    /*auto: valor por defecto, es el tamano original.*/
+    /*cover: utiliza todo el espacio visible*/
+
+    background-position: center center;
+    /*Indica la posicion en la que debe ir la imagen respecto al background*/
+
+    min-height: 100vh;
+    /*Indica la altura minima del elemento, en este caso el body. "vh" representa el porcentaje del viewport. Si el contenedor es mas pequeno que la medida dada, esta reduccion se aplicara. De lo contrario mantendra el tamano. vh en porcentaje del viewport*/
+
     font-family: "Poppins", sans-serif;
     /*Especifica el tipo de fuente, puede contener otra fuente como parametro en caso que la primera falle, el ultimo parametro indica el estilo de la fuente*/
 
