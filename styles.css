@@ -20,6 +20,12 @@ body {
     background-position: center center;
     /*Indica la posicion en la que debe ir la imagen respecto al background*/
 
+    display:flex;
+    /*Determina si los elementos se comportan como inline y se puedan ubicar de manera flexible*/
+
+    flex-direction: column;
+    /*Indican en que sentido se organizaran, si vertical u horizontal, si de izquierda a derecha o viceversa. si de arriba a abajo o viceversa*/
+
     min-height: 100vh;
     /*Indica la altura minima del elemento, en este caso el body. "vh" representa el porcentaje del viewport. Si el contenedor es mas pequeno que la medida dada, esta reduccion se aplicara. De lo contrario mantendra el tamano. vh en porcentaje del viewport*/
 
@@ -28,4 +34,32 @@ body {
 
     margin: 0px;
     /*Indica que espacio tienen los elementos del body entre ellos, este espacio se cuenta por fuera del borde. Es la ultima capa del modelo de caja*/
+
+    align-items:center;
+    /*Distribuye los elementos con respecto al eje x*/
+
+    justify-content:baseline;
+    /*Distribuye los elementos con respecto al eje y*/
+}
+
+h1 {
+    font-size: 4rem;
+    /*rem es la unidad relativa al tamano de la fuente del elemento padre, en este caso 4 veces mas grande*/
+}
+
+.countdown-container {
+/*Este selector debe comenzar con "." para indicar que lo que este bloque se aplicara a la clase deseada*/
+
+display: flex;
+
+}
+
+.big-text {
+    font-size: 3rem;
+
+    line-height: 1;
+    /*Indica el espacio entre los reglones del texto*/
+
+    margin: 0 2rem;
+    /*Cuando hay 2 valores en este parametro, se define el margen superior e inferior con el primer valor. Y el margen izquierdo y derecho con el segundo valor*/
 }
