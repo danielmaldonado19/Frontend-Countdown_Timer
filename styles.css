@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-/*Copiamos el URL de @import de la fuente que deseamos*/
+/*Importamos el URL de @import de la fuente que deseamos. En este caso el import es para LAS FUENTES*/
 * {
 /*Este es el selector global, los parametros y valores que aqui se ingresen afectara a todos los elementos que componen el .html*/
     box-sizing: border-box;
-    /*border-box: s el atributo que indica si el padding y el borde deben estar dentro de la medida completa de la caja*/
-    /*content-box: a la medida completa de la caja se le suma el borde y el padding de los lados*/
+    /*border-box: es el atributo que indica si el padding (espacio entre el contenido y el borde) y el borde deben estar dentro de la medida completa de la caja*/
+    /*content-box: a la medida completa de la caja de contenido se le suma el borde y el padding de los lados*/
 }
 
 body {
@@ -20,20 +20,20 @@ body {
     background-position: center center;
     /*Indica la posicion en la que debe ir la imagen respecto al background*/
 
-    display:flex;
-    /*Determina si los elementos se comportan como inline y se puedan ubicar de manera flexible*/
+    display: flex;
+    /*Determina si los elementos se comportan como inline y se puedan ubicar de manera flexible.*/
 
     flex-direction: column;
-    /*Indican en que sentido se organizaran, si vertical u horizontal, si de izquierda a derecha o viceversa. si de arriba a abajo o viceversa*/
+    /*Indican en que sentido se organizaran, si vertical u horizontal, si de izquierda a derecha o viceversa. si de arriba a abajo o viceversa. Column: se ubican en orden vertical.*/
 
     min-height: 100vh;
     /*Indica la altura minima del elemento, en este caso el body. "vh" representa el porcentaje del viewport. Si el contenedor es mas pequeno que la medida dada, esta reduccion se aplicara. De lo contrario mantendra el tamano. vh en porcentaje del viewport*/
 
     font-family: "Poppins", sans-serif;
-    /*Especifica el tipo de fuente, puede contener otra fuente como parametro en caso que la primera falle, el ultimo parametro indica el estilo de la fuente*/
+    /*Especifica el tipo de fuente, puede contener otra fuente como parametro en caso que la primera falle, el ultimo parametro indica el estilo de la fuente. La fuente poppins se importo al inicio del documento.*/
 
     margin: 0px;
-    /*Indica que espacio tienen los elementos del body entre ellos, este espacio se cuenta por fuera del borde. Es la ultima capa del modelo de caja*/
+    /*Indica que espacio tienen los elementos del body entre ellos, este espacio se cuenta por fuera del borde. Es la ultima capa del modelo de caja. Al parecer no se trata de darle margen a cada elemento del body, mas bien al conjunto de elementos, como si fueran una sola caja.*/
 
     align-items:center;
     /*Distribuye los elementos con respecto al eje x*/
