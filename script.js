@@ -9,12 +9,11 @@ For a countdown timer its necesary:
 
 //1.
 const deadline = new Date("19 Feb 2023");
-/* The "new Date()" constructor allows a string as an argument.*/
+/* The "new Date()" constructor allows a string as an argument and saves in "deadline" var the date given by the user.*/
 
 function countdown(){
     let currentDate =  new Date();
-    /*new Date is an instance's object of a given date. "new" operator creates
-    the instance as an object. If we miss the "new" operator, then Date() returns the current date as an string.*/
+    /*new Date is an instance's object of a given date by user.The "new" operator creates the instance as an object. If we miss the "new" operator, then Date() returns the current date as an string.*/
 
     var timeLeftNum = new Date(deadline - currentDate);
     document.getElementById("seconds").innerHTML = timeLeftNum.getSeconds();
